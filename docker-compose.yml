@@ -16,10 +16,10 @@ services:
     restart: always
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 60s
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
 
   flask:
     build:
@@ -35,8 +35,7 @@ services:
     networks:
       - two-tier
     depends_on:
-      mysql:
-        condition: service_healthy
+      - mysql
     restart: always
 
 volumes:
