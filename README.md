@@ -23,9 +23,9 @@ Tech Stack
 
 Pipeline Stages
 
-1. Clone Code — Jenkins pulls latest code from GitHub
-2. Build Docker Image — builds Flask app image
-3. Deploy — runs docker-compose to start/update containers
+1. Clone Code - Jenkins pulls latest code from GitHub
+2. Build Docker Image - builds Flask app image
+3. Deploy - runs docker-compose to start/update containers
 
 How to Run
 
